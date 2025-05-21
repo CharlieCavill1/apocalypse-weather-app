@@ -1,4 +1,3 @@
-const apiKey = 'c5f7cfc938d01b3074c1d7a7f072f97c'; 
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city');
 const weatherOutput = document.getElementById('weather-output');
@@ -17,7 +16,7 @@ form.addEventListener('submit', async (e) => {
     const { lat, lon, name, country, state } = location;
 
     const weatherRes = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     );
     if (!weatherRes.ok) throw new Error('Weather fetch failed');
     const weatherData = await weatherRes.json();
@@ -31,7 +30,7 @@ form.addEventListener('submit', async (e) => {
 
 async function fetchCoordinates(query) {
   const geoResponse = await fetch(
-    `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(query)}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(query)}&limit=1&appid=${API_KEY}`
   );
   if (!geoResponse.ok) throw new Error('Geo fetch failed');
   const locations = await geoResponse.json();
@@ -79,7 +78,7 @@ function reinterpretWeather(original) {
 function updateSurvivalTips(status) {
   const tips = {
     'Toxic Sunlight': ["Avoid surface exposure."],
-    'Acid Showers': ["Seek shelter immediately in reinforced zones."],
+    'Acid Rain': ["Seek shelter immediately in reinforced zones."],
     'Ashfall': ["Wear respiratory filters."]
   };
 
