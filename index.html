@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post-Apocalypse Weather</title>
+    
+    <link rel="icon" href="assets/icons/skull-icon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="site-title">Global Hazard and Weather Event Forecast</h1>
+        <p id="site-subtitle">A global bulletin for post-Aberration hazard forecasting and survival information</p>
+    </header>
+    <main>
+        <section id="location-input">
+          <form id="search-form">
+            <label for="city">Enter Zone Name:</label>
+            <input type="text" id="city" name="city" placeholder="e.g. Sector-9, New London" required>
+            <button type="submit">Scan</button>
+          </form>
+        </section>
+        <section id="forecast">
+            <h2>Current Threat Assessment</h2>
+            <div id="weather-output">
+              <p class="loading">Awaiting transmission...</p>
+            </div>
+          </section>
+        <section id="survival-tips">
+            <h2>Survivor Advisory</h2>
+            <ul id="tips-list">
+            </ul>
+        </section>
+        <section id="emergency-feed">
+            <div class="ticker">
+            <p id="ticker-text">⚠️ Transmission initializing...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2056 MoPARS Ministry of Post-Aberration Recovery and Survival. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
