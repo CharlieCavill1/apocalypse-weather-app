@@ -22,7 +22,7 @@ Create a `config.js` file in the root:
 
 ```const API_KEY = "YOUR_API_KEY";```
 
-Or use the provided config.example.js as a starting point.
+Or use the provided `config.example.js` as a starting point.
 
 Open `index.html` in your browser using Live Server or any local server setup.
 
