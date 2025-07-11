@@ -1,6 +1,6 @@
 # Apocalypse Weather App
 
-A post-apocalyptic themed weather application that fetches real-time data from the OpenWeatherMap API — and translates it into dystopian weather conditions. Built as a learning project to demonstrate HTML, JavaScript, API integration, and basic version control.
+A post-apocalyptic-themed weather application that fetches real-time data from the OpenWeatherMap API and translates it into dystopian weather conditions. Built as a learning project to demonstrate HTML, JavaScript, API integration, and basic version control.
 
 ## Features
 
@@ -22,7 +22,7 @@ Create a `config.js` file in the root:
 
 ```const API_KEY = "YOUR_API_KEY";```
 
-Or use the provided `config.example.js` as a starting point.
+or use the provided `config.example.js` as a starting point.
 
 Open `index.html` in your browser using Live Server or any local server setup.
 
@@ -46,4 +46,4 @@ This app was built as a learning project as part of web development self-study. 
 
 ## License
 
-MIT — free to use, modify, and improve
+MIT - free to use, modify, and improve
